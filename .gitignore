@@ -1,0 +1,20 @@
+.idea/
+
+# Deb
+deb/jarmemu/debian/jarmemu
+*.deb
+*.buildinfo
+*.changes
+
+# Rpm
+.rpm
+
+# Win
+win/installer/*.exe
+
+# Flatpak
+flatpak/test-install.sh
+flatpak/test-uninstall.sh
+flatpak/test-run.sh
+flatpak/test-clean.sh
+flatpak/.flatpak-builder

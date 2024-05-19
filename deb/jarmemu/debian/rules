@@ -1,0 +1,36 @@
+#!/usr/bin/make -f
+
+VERSION=0.2.1
+RELEASE=1
+URL=https://github.com/Dwight-Studio/JArmEmu/releases/download/v${VERSION}/JArmEmu-${VERSION}.zip
+SOURCE_ROOT=jarmemu
+BUILD_ROOT=debian/jarmemu
+
+clean:
+	@# Nothing
+
+build:
+	@# Nothing
+
+binary:
+	wget ${URL}
+	unzip JArmEmu-${VERSION}.zip
+	rm JArmEmu-${VERSION}.zip
+
+	rm -rf ${BUILD_ROOT}
+	mkdir -p ${BUILD_ROOT}
+
+	install -d ${BUILD_ROOT}/usr/share/java/jarmemu
+	install -Dm 644 ${SOURCE_ROOT}/*.jar -t  ${BUILD_ROOT}/usr/share/java/jarmemu/
+	install -Dm 644 ${SOURCE_ROOT}/lib/* -t  ${BUILD_ROOT}/usr/share/java/jarmemu/lib/
+	install -Dm 644 ${SOURCE_ROOT}/resources/icons/hicolor/scalable/apps/fr.dwightstudio.JArmEmu.svg  ${BUILD_ROOT}/usr/share/icons/hicolor/scalable/apps/fr.dwightstudio.JArmEmu.svg
+	install -Dm644 ${SOURCE_ROOT}/resources/mime/packages/* -t  ${BUILD_ROOT}/usr/share/mime/packages
+	install -Dm644 ${SOURCE_ROOT}/resources/metainfo/* -t  ${BUILD_ROOT}/usr/share/metainfo
+	install -Dm755 ${SOURCE_ROOT}/resources/jarmemu  ${BUILD_ROOT}/usr/bin/jarmemu
+	desktop-file-install --dir=${BUILD_ROOT}/usr/share/applications ${SOURCE_ROOT}/resources/fr.dwightstudio.JArmEmu.desktop
+
+	cd ..
+	rm -rf jarmemu
+
+	dh_gencontrol
+	dh_builddeb

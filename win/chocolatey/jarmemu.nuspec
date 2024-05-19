@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>jarmemu</id>
+    <version>0.2.1</version>
+    <packageSourceUrl>https://github.com/Dwight-Studio/JArmEmu-win/tree/v0.2.1/chocolatey</packageSourceUrl>
+    <owners>FoxYinx</owners>
+    <title>JArmEmu</title>
+    <authors>Dwight Studio</authors>
+    <projectUrl>https://dwightstudio.fr/jarmemu</projectUrl>
+    <iconUrl>https://static.dwightstudio.fr/jarmemu/PNG/LOGO.png</iconUrl>
+    <copyright>Copyright (C) 2024 Dwight Studio</copyright>
+    <licenseUrl>https://github.com/Dwight-Studio/JArmEmu/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Dwight-Studio/JArmEmu</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Dwight-Studio/JArmEmu/issues</bugTrackerUrl>
+    <tags>jarmemu simulator arm armv7 java educational</tags>
+    <summary>Simple ARMv7 simulator written in Java, intended for educational purpose</summary>
+    <description><![CDATA[# JArmEmu
+                          ### Simple ARMv7 simulator written in Java, intended for educational purpose.
+
+                          ## Features
+                          JArmEmu is a simple, user-friendly simulator that provides basic control and information about a simulated ARMv7 architecture.
+
+                          JArmEmu is powered by an ARMv7 interpreter built *Ex Nihilo* for this project, which provides real-time syntax highlighting,
+                          intelligent auto-completion, memory, stack and register monitoring...
+
+                          You can write your program using the ARMv7 instruction set (refer to
+                          [Instructions.md](https://github.com/Dwight-Studio/JArmEmu/blob/main/Instructions.md)) and include GNU Assembly directives (only the basic ones are implemented, you can refer to syntax
+                          highlighting or auto-completion to see if it is available).]]></description>
+    <releaseNotes>https://github.com/Dwight-Studio/JArmEmu/releases/tag/v0.2.1</releaseNotes>
+    <dependencies>
+        <dependency id='openjdk' />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

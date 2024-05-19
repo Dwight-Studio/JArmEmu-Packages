@@ -1,0 +1,10 @@
+Source: jarmemu
+Section: devel
+Priority: optional
+Maintainer: Alexandre Leconte <aleconte@dwightstudio.fr>
+
+Package: jarmemu
+Architecture: all
+Depends: java21-runtime
+Description: JArmEmu is a simple simulator with a graphical interface
+ that offers basic control and information about a simulated ARMv7 architecture.

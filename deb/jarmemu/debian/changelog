@@ -1,0 +1,5 @@
+jarmemu (0.2.1-1) all; urgency=medium
+
+  * Initial packaging work with dpkg-buildpackage.
+
+ -- Alexandre Leconte Alexandre Leconte <aleconte@dwightstudio.fr>  Fri, 17 May 2024 18:19:27 +0200

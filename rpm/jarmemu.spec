@@ -1,6 +1,6 @@
 Name:           jarmemu
 Version:        1.0.0
-Release:        1
+Release:        2
 Summary:        JArmEmu Portable ARM Simulator
 Group:          Development/Tools
 License:        GPL-3.0

@@ -23,8 +23,7 @@
 #     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-rm -rf build/
-mkdir build/
+rm -rf ~/rpmbuild
 rpmdev-setuptree
 
 rpmbuild --undefine=_disable_source_fetch -ba jarmemu.spec

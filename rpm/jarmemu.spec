@@ -1,5 +1,5 @@
 Name:           jarmemu
-Version:        0.2.1
+Version:        1.0.0
 Release:        1
 Summary:        JArmEmu Portable ARM Simulator
 Group:          Development/Tools

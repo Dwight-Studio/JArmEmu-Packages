@@ -7,7 +7,7 @@ deb/jarmemu/debian/jarmemu
 *.changes
 
 # Rpm
-.rpm
+*.rpm
 
 # Win
 win/installer/*.exe

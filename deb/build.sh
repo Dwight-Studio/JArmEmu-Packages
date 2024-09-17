@@ -23,5 +23,9 @@
 #     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
+rm -f *.deb
+rm -f *.buildinfo
+rm -f *.changes
+
 cd jarmemu || exit 1
 dpkg-buildpackage -b -kcontact@dwightstudio.fr

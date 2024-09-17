@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "JArmEmu"
-#define MyAppVersion "0.2.1"
+#define MyAppVersion "1.0.0"
 #define MyAppRelease "1"
 #define MyAppPublisher "Dwight Studio"
 #define MyAppURL "https://dwightstudio.fr/jarmemu"
@@ -13,8 +13,8 @@
 
 ; Pour GNU/Linux
 #define RepositoryPath "Z:\jarmemu"
-#define TargetPath RepositoryPath + "\build"
-#define ResourcesPath RepositoryPath + "\build\resources"
+#define TargetPath RepositoryPath + "\build\jarmemu"
+#define ResourcesPath TargetPath + "\resources"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
@@ -34,7 +34,7 @@ DisableProgramGroupPage=yes
 LicenseFile={#RepositoryPath}\LICENSE
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 PrivilegesRequired=lowest
-OutputDir={#RepositoryPath}\installer
+OutputDir={#RepositoryPath}
 OutputBaseFilename={#MyAppName}-{#MyAppVersion}-{#MyAppRelease}
 SetupIconFile={#ResourcesPath}\favicon.ico
 Compression=lzma

@@ -5,6 +5,7 @@ deb/jarmemu/debian/jarmemu
 *.deb
 *.buildinfo
 *.changes
+*.log
 
 # Rpm
 *.rpm

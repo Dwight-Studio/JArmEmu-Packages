@@ -11,6 +11,7 @@ deb/jarmemu/debian/jarmemu
 
 # Win
 win/installer/*.exe
+win/JArmEmu*.exe
 
 # Flatpak
 flatpak/test-install.sh

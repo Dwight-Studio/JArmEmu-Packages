@@ -39,7 +39,6 @@ install -Dm 644 resources/mime/packages/fr.dwightstudio.JArmEmu.xml %{buildroot}
 install -Dm 644 resources/metainfo/fr.dwightstudio.JArmEmu.metainfo.xml %{buildroot}%{_datadir}/metainfo/fr.dwightstudio.JArmEmu.metainfo.xml
 
 desktop-file-install --dir=%{buildroot}%{_datadir}/applications resources/fr.dwightstudio.JArmEmu.desktop
-xdg-desktop-icon install --novendor resources/fr.dwightstudio.JArmEmu.desktop
 
 %post
 touch --no-create %{_datadir}/icons/hicolor

@@ -39,7 +39,6 @@ package() {
     install -Dm 644 resources/metainfo/fr.dwightstudio.JArmEmu.metainfo.xml $pkgdir/usr/share/metainfo/fr.dwightstudio.JArmEmu.metainfo.xml
 
     desktop-file-install --dir=$pkgdir/usr/share/applications resources/fr.dwightstudio.JArmEmu.desktop
-    xdg-desktop-icon install --novendor resources/fr.dwightstudio.JArmEmu.desktop
 
     depends=("java-runtime>=21")
 }

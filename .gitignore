@@ -13,6 +13,7 @@ deb/jarmemu/debian/jarmemu
 # Win
 win/installer/*.exe
 win/JArmEmu*.exe
+win/chocolatey/*.nupkg
 
 # Flatpak
 flatpak/test-install.sh

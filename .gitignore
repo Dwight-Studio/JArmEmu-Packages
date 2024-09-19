@@ -1,7 +1,7 @@
 .idea/
 
 # Deb
-deb/jarmemu/debian/jarmemu
+deb/jarmemu
 *.deb
 *.buildinfo
 *.changes
@@ -10,14 +10,13 @@ deb/jarmemu/debian/jarmemu
 # Rpm
 *.rpm
 
+# Arch
+arch/PKGBUILD
+
 # Win
 win/installer/*.exe
 win/JArmEmu*.exe
 win/chocolatey/*.nupkg
 
 # Flatpak
-flatpak/test-install.sh
-flatpak/test-uninstall.sh
-flatpak/test-run.sh
-flatpak/test-clean.sh
-flatpak/.flatpak-builder
+flatpak/fr.dwightstudio.JArmEmu.json

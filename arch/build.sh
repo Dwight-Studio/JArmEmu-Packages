@@ -23,20 +23,6 @@
 #     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-rm -f *.deb
-rm -f *.buildinfo
-rm -f *.changes
-rm -rf jarmemu
+rm -f PKGBUILD
 
-cd jarmemu_template || exit 1
-FILES=$(find "debian" -type f)
-cd .. || exit 1
-
-mkdir -p jarmemu/debian
-
-for file in $FILES; do
-  VERSION="1.0.0" SUM="5be7c12b8a5d4f88c09eca63e77fb3f559e6edffe8a6399932f7da2e6a76a23b" DATE=$(date -R) envsubst '${VERSION} ${SUM} ${DATE}' < jarmemu_template/$file > jarmemu/$file
-done
-
-cd jarmemu || exit 1
-dpkg-buildpackage -b -kcontact@dwightstudio.fr
+VERSION="1.0.0" SUM="5be7c12b8a5d4f88c09eca63e77fb3f559e6edffe8a6399932f7da2e6a76a23b" envsubst '${VERSION} ${SUM}' < PKGBUILD_template > PKGBUILD

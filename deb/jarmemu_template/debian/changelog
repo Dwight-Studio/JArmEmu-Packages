@@ -1,0 +1,5 @@
+jarmemu (${VERSION}-1) all; urgency=medium
+
+  * Updating to v${VERSION} from upstream
+
+ -- Alexandre Leconte <aleconte@dwightstudio.fr>  ${DATE}

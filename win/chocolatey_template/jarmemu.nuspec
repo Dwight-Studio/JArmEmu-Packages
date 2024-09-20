@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>jarmemu</id>
-    <version>1.0.0</version>
-    <packageSourceUrl>https://github.com/Dwight-Studio/JArmEmu-Packages/tree/main/win/chocolatey</packageSourceUrl>
+    <version>$VERSION</version>
+    <packageSourceUrl>https://github.com/Dwight-Studio/JArmEmu-Packages/tree/main/win</packageSourceUrl>
     <owners>FoxYinx</owners>
     <title>JArmEmu</title>
     <authors>Dwight Studio</authors>
@@ -28,7 +28,7 @@
                           You can write your program using the ARMv7 instruction set (refer to
                           [Instructions.md](https://github.com/Dwight-Studio/JArmEmu/blob/main/Instructions.md)) and include GNU Assembly directives (only the basic ones are implemented, you can refer to syntax
                           highlighting or auto-completion to see if it is available).]]></description>
-    <releaseNotes>https://github.com/Dwight-Studio/JArmEmu/releases/tag/v1.0.0</releaseNotes>
+    <releaseNotes>https://github.com/Dwight-Studio/JArmEmu/releases/tag/v$VERSION</releaseNotes>
     <dependencies>
         <dependency id='openjdk' version="21.0.0"/>
     </dependencies>

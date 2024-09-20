@@ -25,13 +25,22 @@
 
 VERSION=1.0.0
 
-mkdir build
-cd build || exit 1
+rm -rf innosetup
+
+cd innosetup_template || exit 1
+FILES=$(find "./" -type f)
+cd .. || exit 1
+
+mkdir -p innosetup/build
+
+for file in $FILES; do
+  VERSION=$VERSION SUM="5be7c12b8a5d4f88c09eca63e77fb3f559e6edffe8a6399932f7da2e6a76a23b" envsubst '${VERSION} ${SUM}' < innosetup_template/$file > innosetup/$file
+done
+
+cd innosetup/build || exit 1
 wget https://github.com/Dwight-Studio/JArmEmu/releases/download/v${VERSION}/JArmEmu-${VERSION}.zip
 unzip JArmEmu-${VERSION}.zip
 
-cd .. || exit 1
+cd ../.. || exit 1
 sudo systemctl start docker
-sudo docker run --rm -i -v "$(pwd):/jarmemu" amake/innosetup /V Z:/jarmemu/jarmemu.iss
-
-rm -rf build
+sudo docker run --rm -i -v "$(pwd)/innosetup:/jarmemu" amake/innosetup /V Z:/jarmemu/jarmemu.iss

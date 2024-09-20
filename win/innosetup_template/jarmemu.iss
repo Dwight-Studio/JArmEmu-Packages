@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "JArmEmu"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "$VERSION"
 #define MyAppRelease "1"
 #define MyAppPublisher "Dwight Studio"
 #define MyAppURL "https://dwightstudio.fr/jarmemu"

@@ -14,9 +14,8 @@ deb/jarmemu
 arch/PKGBUILD
 
 # Win
-win/installer/*.exe
-win/JArmEmu*.exe
-win/chocolatey/*.nupkg
+win/innosetup
+win/chocolatey
 
 # Flatpak
 flatpak/fr.dwightstudio.JArmEmu.json

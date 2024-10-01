@@ -16,6 +16,7 @@ arch/PKGBUILD
 # Win
 win/innosetup
 win/chocolatey
+win/*.exe
 
 # Flatpak
 flatpak/fr.dwightstudio.JArmEmu.json

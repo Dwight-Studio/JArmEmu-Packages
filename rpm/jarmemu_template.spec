@@ -10,8 +10,8 @@ ExclusiveArch:  %{java_arches} noarch
 
 Source0:        https://github.com/Dwight-Studio/JArmEmu/archive/refs/tags/v%{version}.tar.gz
 
-BuildRequires:  maven-local
-BuildRequires:  maven-openjdk21
+BuildRequires:  maven-local-openjdk25
+BuildRequires:  maven-openjdk25
 BuildRequires:  desktop-file-utils
 BuildRequires:  xdg-utils
 
